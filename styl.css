@@ -1,0 +1,33 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 60px;
+    background-color: #E5C4EE;
+    color: #390947;
+}
+h1{
+    font-size: 50px;
+}
+#options button{
+    min-width: 160px;
+    height: 10%;
+    font-size: 4rem;
+    border-radius: 100px;
+    background-color:#CC6CE7;
+    border-color: #A72ECA;
+    
+
+}
+#options button:hover{
+    background-color: #E5C4EE;
+}
+#Pchoice,#Cchoice,#pscore,#cscore{
+    font-size: 30px;
+}
+#res{
+    font-size: 40px;
+    background-color: #CC6CE7;
+}
