@@ -5,29 +5,102 @@ body{
     align-items: center;
     text-align: center;
     line-height: 60px;
-    background-color: #E5C4EE;
-    color: #390947;
+    background-image:url("https://cdn.pixabay.com/photo/2019/05/17/21/02/milkyway-4210684_1280.jpg") ;
+    color: #C0C0C0;
 }
 h1{
-    font-size: 50px;
+    font-size: 75px;
+    -webkit-text-stroke: 2px  linear-gradient(120deg,
+        #1c062d,
+        #431a6b,
+        #842db4,
+        #b650db,
+        #eb6ff7,
+        #1c062d);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(120deg,
+        #1c062d,
+        #431a6b,
+        #842db4,
+        #b650db,
+        #eb6ff7,
+        #1c062d);
+    background-repeat: no-repeat;
+    background-position: -820px 0;
+    animation: move 2s linear 1 forwards;
+    
+}
+@keyframes move{
+    100%{
+        background-position: 0 0;
+    }
 }
 #options button{
     min-width: 160px;
     height: 10%;
     font-size: 4rem;
-    border-radius: 100px;
-    background-color:#CC6CE7;
-    border-color: #A72ECA;
-    
-
+    margin: 1%;
+    background-image: linear-gradient(100deg, #330949, #eb6ff7);
+    border-radius: 10px ;
+    border-color:#1c062d;
+    transition: 1s ease;
+    cursor: pointer;
+    animation: vibrate 2s 10s linear infinite;
 }
 #options button:hover{
-    background-color: #E5C4EE;
+    background-color: #842db4;
+    transform: translateZ(100px) scale(1.1) rotateX(10deg);
+    animation: none;
 }
+@keyframes vibrate {
+    0%{
+        transform: translate(0);
+    }
+    20%{
+        transform: translate(-2px,2px);
+    }
+    40%{
+        transform: translate(-2px,-2px);
+    }
+    60%{
+        transform: translate(2px,2px);
+    }
+    80%{
+        transform: translate(2px,-2px);
+        
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
 #Pchoice,#Cchoice,#pscore,#cscore{
     font-size: 30px;
 }
 #res{
     font-size: 40px;
-    background-color: #CC6CE7;
+    color: #1c062d;
+    -webkit-text-stroke: 0.5px #C0C0C0;
+    color: transparent;
+    background-image: radial-gradient(#1c062d 60%,#c0c0c0 40%);
+    -webkit-background-clip: text;
+}
+#game{
+    background-color: rgba(136, 39, 158, 0.411);
+    height: 50%;
+    width: 50%;
+    z-index:0.5;
+    animation-name: scale;
+    animation-duration: 5s;
+    border: 1px rgba(136, 39, 158, 0.411);
+    
+}
+@keyframes scale{
+    from{
+        background-color: rgba(65, 24, 75, 0.411) ;
+    }
+    to{
+        babackground-color: rgba(136, 39, 158, 0.411);
+    }
 }
