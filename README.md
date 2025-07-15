@@ -6,7 +6,10 @@ A fun and interactive web-based version of the classic Snake-Water-Gun game (sim
 
  Features
  
--Classic Snake-Water-Gun logic implemented in JavaScript
--Real-time scoring and result display
--Smooth transitions and responsive UI
--Beginner-friendly project showcasing DOM manipulation
+-Classic Snake-Water-Gun logic implemented in JavaScript.
+
+-Real-time scoring and result display.
+
+-Smooth transitions and responsive UI.
+
+-Beginner-friendly project showcasing DOM manipulation.
